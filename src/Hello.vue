@@ -1,8 +1,9 @@
 <template>
-  <div id="app">
-        <router-link :to="'/'" style="margin-right:20px;">Hello</router-link>
-        <router-link :to="'/Home'">Home</router-link>
-    <router-view/>
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <p>{{text}}</p>
+    <input type="text" v-model="msg" placeholder="请输入">
+    <button @click="send(msg)">发送</button>
   </div>
 </template>
 
